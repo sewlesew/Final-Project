@@ -1,0 +1,128 @@
+{
+    "_id": {
+        "$oid": "58fd385ff36d285bbc13104c"
+    },
+    "name": "dc",
+    "location": {
+        "type": "Point",
+        "coordinate": [
+            2,
+            3
+        ]
+    },
+    "members": [
+        "user4",
+        "user1",
+        "user2"
+    ],
+    "state": "dc",
+    "city": "dc",
+    "description": "fffffffffffffffffff",
+    "events": [
+        {
+            "name": "henok event",
+            "time": " ",
+            "id": "",
+            "status": " started",
+            "description": "eddddddddddddewwwww",
+            "owner": "user2",
+            "members": [
+                "user1",
+                "user2"
+            ]
+        },
+        {
+            "name": " sewlese event",
+            "time": " ",
+            "id": "",
+            "description": "rrrrrrrrrrr",
+            "status": " ",
+            "owner": "user4",
+            "members": [
+                "user4"
+            ]
+        }
+    ],
+    "owner": "user4",
+    "announcement": [
+        {
+            "id": "",
+            "time": "",
+            "titile": "",
+            "description ": "vvvvvvvvv "
+        },
+        {
+            "id": "ww",
+            "time": " ",
+            "titile": " ",
+            "description": "vvvvvvvvv"
+        }
+    ]
+}
+
+///////////////////////////////////////
+
+
+
+
+{
+    "_id": {
+        "$oid": "58fe57e2f36d285efe04290b"
+    },
+    "name": "fairfiledclub",
+    "location": {
+        "type": "Point",
+        "coordinate": [
+            2,
+            3
+        ]
+    },
+    "members": [
+        "user4",
+        "user3",
+        "user2"
+    ],
+    "state": "ia",
+    "city": "failfiled",
+    "description": "fffffffffffffffffff",
+    "events": [
+        {
+            "name": "henok event",
+            "time": " ",
+            "id": "",
+            "status": " started",
+            "description": "eddddddddddddewwwww",
+            "owner": "user2",
+            "members": [
+                "user3",
+                "user2"
+            ]
+        },
+        {
+            "name": " sewlese event",
+            "time": " ",
+            "id": "",
+            "description": "rrrrrrrrrrr",
+            "status": " ",
+            "owner": "user4",
+            "members": [
+                "user4"
+            ]
+        }
+    ],
+    "owner": "user4",
+    "announcement": [
+        {
+            "id": "",
+            "time": "",
+            "titile": "",
+            "description ": "vvvvvvvvv "
+        },
+        {
+            "id": "ww",
+            "time": " ",
+            "titile": " ",
+            "description": "vvvvvvvvv"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-md-8">
+    <div *ngIf="usersflag">
+ <!--This is the default description for profile page -->
+
+
+  <div >
+
+    <img  src="{{profile.picture}}"
+    class="img-responsive" alt="Responsive image" class="img-thumbnail">
+ <p>Given Name:  {{profile.given_name}} </p>
+ <p>Family Name: {{profile.family_name}} </p>
+  <p>Email: {{profile.email}} </p>
+
+  </div>   
+
+      </div>
+    
+    <router-outlet></router-outlet>
+    
+    
+   </div>
+
+  <div class="col-md-4 " >
+    
+    
+ <p> <a [routerLink]="['subscribe']" routerLinkActive="active">
+    <button type="button" (click)="subscribe()"class="btn btn-primary btn-lg btn-block " >Subscribe</button>
+    </a> </p>
+
+      <p><a [routerLink]="['unsubscribe']" routerLinkActive="active">
+    <button type="button" (click)="unsubscribe()" class="btn btn-primary btn-lg btn-block">Unsubscribe</button>
+    </a></p>
+    </div>
+
+  <!--<p>   <a [routerLink]="['update']" routerLinkActive="active">
+   <button type="button"  (click)="update()" class="btn btn-primary btn-lg btn-block">Update User Information</button>
+    </a> </p>-->

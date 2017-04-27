@@ -1,0 +1,107 @@
+41.018054657352245,-91.9687831401825 Library
+41.012242236195554, -91.9646954536438  Everybody wholes foods
+41.008048555399895, -91.9652533531189  The Cider House
+41.00642930220075 ,  -91.9631290435791 India Cafe
+41.00676934867321, -91.97242021560669  Taco John's
+41.00623498914293, -91.97823524475098  Burger King
+41.006915082338516, -91.98280572891235  Taco 
+41.0044375661952 , -91.96428775787354 Fairfield Public Library
+
+
+
+///////////////////
+"name": "vvvvvvvvvvvvvvvvvvvvv",
+    "location": [
+        41.0044375661952,
+        -91.96428775787354
+    ],
+    "numberofmember": 3,
+    "members": [
+        "user4",
+        "user3",
+        "henok2000@gmail.com"
+    ],
+    "state": "ia",
+    "city": "failfiled",
+    "description": "fffffffffffffffffff",
+    "events": [
+        {
+            "name": "henok event",
+            "time": " ",
+            "id": "",
+            "status": " started",
+            "description": "eddddddddddddewwwww",
+            "owner": "user2",
+            "members": [
+                "user3",
+                "user2"
+            ]
+        },
+        {
+            "name": " sewlese event",
+            "time": " ",
+            "id": "",
+            "description": "rrrrrrrrrrr",
+            "status": " ",
+            "owner": "user4",
+            "members": [
+                "user4"
+            ]
+        }
+    ],
+    "owner": "user4",
+    "announcement": [
+        {
+            "id": "",
+            "time": "",
+            "titile": "",
+            "description ": "vvvvvvvvv "
+        },
+        {
+            "id": "ww",
+            "time": " ",
+            "titile": " ",
+            "description": "vvvvvvvvv"
+        }
+    ]
+
+////////////////////////
+
+
+"name": "abu",
+    "location": [
+        23,
+        33
+    ],
+    "gender": "male",
+    "email": "xxx@yyy.com",
+    "state": "ia",
+    "city": "failfiled",
+    "picture": "xxx",
+    "status": 1
+////////////////
+ "name": "sewlesew",
+    "location": [
+        23,
+        33
+    ],
+    "gender": "male",
+    "email": "sssss@yyy.com",
+    "state": "ia",
+    "city": "failfiled",
+    "picture": "ssss"
+}
+/////////////////////
+
+
+ "name": "henok",
+    "location": [
+        23,
+        33
+    ],
+    "gender": "male",
+    "email": "xxx@yyy.com",
+    "state": "cc",
+    "city": "failfiled",
+    "picture": "xxx",
+    "status": 0

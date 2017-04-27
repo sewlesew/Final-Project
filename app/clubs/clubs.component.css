@@ -1,0 +1,20 @@
+.container{
+  position: relative;
+    
+}
+.mapclass{
+ float: right;
+ width: 30%;
+ 
+}
+.dataform{
+
+  float: left;
+  width: 70%;
+}
+.clubs{
+     width: 100%;
+    float:none
+}
+
+

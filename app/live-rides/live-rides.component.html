@@ -1,0 +1,85 @@
+
+<div class="row">
+  <div class="col-md-10">
+
+
+
+ <h3>Current Location</h3>
+
+<h3 *ngIf="currentlon">{{currentlon}},{{currentlat}}</h3>
+<!--<sebm-google-map [latitude]="currentlat" [longitude]="currentlon">
+  <sebm-google-map-marker [latitude]="currentlat" [longitude]="currentlon"></sebm-google-map-marker>
+</sebm-google-map>-->
+
+          <div class="map">
+            <sebm-google-map 
+              [latitude]="currentlat" 
+              [longitude]="currentlon"
+              [zoom]="zoom"
+              [disableDefaultUI]=false
+              [zoomControl]="false"
+             >
+              
+              <sebm-google-map-marker 
+                *ngFor="let m of markers;let i = index"
+                (markerClick)="clickedMarker(m, i)"
+                [latitude]="m.lat" 
+                [longitude]="m.lng"
+                [markerDraggable]="m.draggable"
+                [markerDraggable]="m.draggable"
+         
+                
+                >
+                
+                <sebm-google-map-info-window>
+                   <strong>{{m.name}}</strong>
+                </sebm-google-map-info-window>
+                
+                </sebm-google-map-marker>
+            </sebm-google-map>
+          </div>  
+    
+
+
+<!--
+-------------------->
+
+  </div>
+
+  <div class="col-md-2">
+  <br/>
+  <br/>
+  
+  <table class="table table-striped table-hover ">
+                          <thead>
+                            <tr>
+                              <th>Live rides</th> 
+                               </tr>
+                          </thead>
+                 <tbody>
+                   
+                        <!--<button (click)="joinClub(item._id)">Join</button>-->
+                             
+                          <div *ngFor="let clubevents of livevents | async">
+                          <div *ngFor="let item of clubevents.events">
+                            <div *ngIf="item.status==' started'">
+                                <tr> <td>   {{item.name}} </td> 
+                                    
+                                     <div *ngIf="false">
+                                   <td>   <button (click)="addEvent(item._id)">AddEvent</button></td>
+                                   </div>
+                                </tr>
+                           </div>
+                            </div>
+                          </div>         
+                   
+                
+            </tbody>
+       </table>
+       
+<!--<button type="button"  class="btn btn-default btn-lg btn-block"(click)="addevents()"> Add Events</button>
+<button  type="button"  class="btn btn-default btn-lg btn-block"(click)="addevents()"> Update Events</button>
+<button  type="button"  class="btn btn-default btn-lg btn-block"(click)="addevents()"> Delete Events</button>-->
+  </div>
+  
+</div>

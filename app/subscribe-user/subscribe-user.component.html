@@ -1,0 +1,36 @@
+ 
+   
+ <form  [formGroup]="mygroup" (ngSubmit)="onSubmit()" method="POST">
+
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" id="email" value={{profile.email}} class="form-control" formControlName="email" readonly >
+    </div>
+
+    <div class="form-group">
+      <label for="email">Name:</label>
+      <input type="text" id="name" value={{profile.name}} class="form-control" formControlName="name" readonly>
+    </div> 
+
+    <div class="form-group">
+     
+      <input type="hidden" id="status" [value]="0" class="form-control" formControlName="status">
+    </div>   
+
+    
+
+<div class="form-group">    
+      <button type="submit" class="btn btn-primary" >Submit</button>
+    </div>
+
+</form>
+
+ <div class="form-group" *ngIf="isSubscribed">    
+     <p>You have subscribed successfully. </p>
+    </div>
+
+ 
+ 
+ 
+ 

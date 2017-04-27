@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-10">
+      <h1>Welcome</h1>
+
+
+
+      <button (click)="auth.login()" *ngIf="!auth.authenticated()">Login</button> <br>
+
+
+      <div [ngClass]='{description:true}' *ngIf="!auth.authenticated()">
+        Some description here
+
+      </div>
+
+      <div [ngClass]='{description:true}' *ngIf="auth.authenticated() && auth.userProfile ">
+
+        <nav class="navbar navbar-">
+          <div class="container-fluid">
+            <!--<div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>-->
+            <ul class="nav navbar-nav">
+              <li class="active"><a [routerLink]="['home']" routerLinkActive="active">Home</a></li>
+              <li><a [routerLink]="['clubs']" routerLinkActive="active">Clubs</a></li>
+              <li> <a [routerLink]="['events']" routerLinkActive="active">Events</a></li>
+              <li> <a [routerLink]="['liverides']" routerLinkActive="active">Live Rides</a></li>
+
+              <li><a [routerLink]="['chat']" routerLinkActive="active">Chat Members</a></li>
+
+              <li><a [routerLink]="['users']" routerLinkActive="active">Profile</a></li>
+
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <!--<li><button  class="glyphicon glyphicon-log-out" (click)="auth.logout()">Logout</button></li>-->
+              <li><button type="button" class="btn btn-primary btn-lg" (click)="auth.logout()"> LogOut</button></li>
+            </ul>
+
+          </div>
+        </nav>
+        <!--<a [routerLink]="['home']" routerLinkActive="active">Home</a>
+  <a [routerLink]="['clubs']" routerLinkActive="active">Clubs</a>
+  <a [routerLink]="['liverides']" routerLinkActive="active">Live Rides</a>
+  <a [routerLink]="['events']" routerLinkActive="active">Events</a>
+  <a [routerLink]="['profile']" routerLinkActive="active">Profile</a>-->
+
+
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

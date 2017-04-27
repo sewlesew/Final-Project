@@ -1,0 +1,159 @@
+<div *ngFor="let item of club | async">
+
+ <div class="row">
+     <div class="unsubbutondiv col-md-10" >
+   </div>
+  <div class="unsubbutondiv col-md-2 " >
+    <button class="btn btn-danger subsc" (click)="unSubscribeClube(item._id)">Unsubscribe</button>
+  </div>
+   <div class="unsubbutondiv col-md-8 " >
+   </div>
+ </div>
+ 
+   <div class="row">
+
+
+
+
+
+    <div class="addannouncment col-md-3">
+
+      <div *ngIf="item.owner===loginuser">
+        <!--<div>-->
+
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+
+
+          <div class="form-group">
+            <label for="time">Time:</label>
+            <input type="datetime-local" name="time" class="form-control" formControlName="time">
+          </div>
+
+
+          <div class="form-group">
+            <label for="titile">titile:</label>
+            <input type="text" name="titile" class="form-control" formControlName="titile">
+          </div>
+
+          <div class="form-group">
+            <label for="description">description :</label>
+            <input type="text" name="description " class="form-control" formControlName="description">
+          </div>
+
+          <div class="form-group">
+            <!-- class="btn btn-primary" -->
+            <button class="btn btn-primary" (click)="addannouncement()">add announcement</button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+    <div class="addevent col-md-9 ">
+
+        <!--<div *ngIf="item.owner===loginuser">-->
+          <div>
+
+        <form [formGroup]="myFormEvent" (ngSubmit)="onSubmitEvent()">
+
+
+          <div class="form-group">
+            <label for="etime">StartTime:</label>
+            <input type="datetime-local" name="etime" class="form-control" formControlName="etime">
+          </div>
+
+
+          <div class="form-group">
+            <label for="ename">name:</label>
+            <input type="text" name="ename" class="form-control" formControlName="ename">
+          </div>
+
+          <div class="form-group">
+            <label for="edescription">description :</label>
+            <input type="text" name="edescription " class="form-control" formControlName="edescription">
+          </div>
+
+
+         <input type="hidden" name="estatus " value="Pending" class="form-control" formControlName="estatus">
+           <input type="hidden" name="ecid "  class="form-control" formControlName="ecid">
+         <input type="hidden" name="startlocation "  class="form-control" formControlName="startlocation">
+       <input type="hidden" name="endlocation "  class="form-control" formControlName="endlocation">
+      <input type="hidden" name="eowner"  class="form-control" formControlName="eowner">
+     <input type="hidden" name="emembers"  class="form-control" formControlName="emembers">
+
+      
+
+          <div class="form-group">
+            <!-- class="btn btn-primary" -->
+            <button class="btn btn-primary"  (click)="addeventforclub()">add event</button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="form-group" class="col-xs-3">
+      <label class="labledescr">Club Name:</label>
+      <label> {{item.name}}</label>
+    </div>
+
+
+    <div class="form-group" class="col-xs-3">
+      <label class="labledescr">state :</label>
+      <label> {{item.state}}</label>
+    </div>
+
+    <div class="form-group" class="col-xs-3">
+      <label class="labledescr">city :</label>
+      <label> {{item.city}}</label>
+    </div>
+
+
+
+
+    <div class="form-group" class="col-xs-3">
+      <label class="labledescr">state :</label>
+      <label> {{item.state}}</label>
+    </div>
+
+
+    <div class="form-group" class="col-xs-3">
+      <label class="labledescr">Number Of Memeber:</label>
+      <label> {{item.numberofmember}} </label>
+    </div>
+
+    <div class="form-group" class="col-xs-4">
+      <label class="labledescr">owner :</label>
+      <label> {{item.owner}}</label>
+    </div>
+
+
+  </div>
+
+  <br>
+  <h3> Announcement </h3>
+
+
+  <div *ngFor="let ann of item.announcement">
+    <div>
+
+                <h4>time:</h4> {{ann.time}}
+            <h4> Title of announcement: </h4>{{ann.titile}}
+            <h4> Description:</h4>{{ann.description}}
+
+    
+    </div>
+    <br>
+
+  </div>
+
+
+</div>

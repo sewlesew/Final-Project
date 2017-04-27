@@ -1,0 +1,22 @@
+
+
+
+
+unsubbutondiv{
+    
+position: relative;
+width: 100%;
+
+
+    
+}
+
+.subsc{
+   float: right;
+  overflow:auto
+}
+
+.labledescr{
+    font-size: 16px;
+    
+}

@@ -1,0 +1,85 @@
+<div class="row">
+  <div class="col-md-8">
+
+
+
+    <div *ngIf="clubs">
+      <p>List of clubs</p>
+      <div *ngFor="let item of clubs | async">
+
+        <div *ngIf="checkmember(item)">
+          <div class="row">
+            <div class="col-xs-5">
+            <h4>Club name:</h4> {{item.name}}
+            <h4> Number of member: </h4>{{item.numberofmember}}
+            <h4> owner:</h4>{{item.owner}}
+            </div>
+
+             <div class="col-xs-4">
+            <sebm-google-map [latitude]="item.location[0]" [longitude]="item.location[1]">
+              <sebm-google-map-marker [latitude]="item.location[0]" [longitude]="item.location[1]"></sebm-google-map-marker>
+              <!--     <sebm-google-map-marker [latitude]="currentlat2" [longitude]="currentlon2"></sebm-google-map-marker>-->
+              </sebm-google-map>
+              </div>
+            <div class="col-xs-2">
+            <button class="btn btn-success" (click)="joinClub(item._id)">Join</button> </div>
+          </div>
+          <br>
+          <br>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="col-md-4">
+
+    <!-- <button (click)="getClub()"> getClubs</button>-->
+  </div>
+</div>
+
+
+<!--
+
+
+<div [ngClass]="{leftHome:true}">
+
+  left Text
+</div>
+
+
+<div [ngClass]="{RightHome:true}">
+  
+  
+  right text
+  </div>
+
+  -->
+
+
+<!--</div>
+
+   <div *ngIf="clubs.length()<3">
+     <button (click)="noClubs()">Create Club</button>
+   </div>-->
+<!--
+<div *ngIf="clubflag">-->
+
+
+<!--<form [FormGroup]="clubform" (ngSubmit)="createClub()"> 
+
+ <buttton type="submit">Submit</button>
+
+  </form>
+<form [FormGroup]="clubform" (ngSubmit)="createClub()"> 
+Name:<input type="text" FormControlName="name" >
+  Description: <input type="text" FormControlName="description" >
+    City :<input type="text" FormControlName="city" >
+   State :  <input type="text" FormControlName="state" >
+   <buttton type="submit">Submit</button>
+  </form>-->
+
+<!--</div>-->

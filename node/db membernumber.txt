@@ -1,0 +1,62 @@
+{
+    "_id": {
+        "$oid": "58fd385ff36d285bbc13104c"
+    },
+    "name": "dc",
+    "location": {
+        "type": "Point",
+        "coordinate": [
+            2,
+            3
+        ]
+    },
+    "numberofmember": 3,
+    "members": [
+        "user4",
+        "user1",
+        "henok2000@gmail.com"
+    ],
+    "state": "dc",
+    "city": "dc",
+    "description": "fffffffffffffffffff",
+    "events": [
+        {
+            "name": "henok event",
+            "time": " ",
+            "id": "",
+            "status": " started",
+            "description": "eddddddddddddewwwww",
+            "owner": "user2",
+            "members": [
+                "user1",
+                "user2"
+            ]
+        },
+        {
+            "name": " sewlese event",
+            "time": " ",
+            "id": "",
+            "description": "rrrrrrrrrrr",
+            "status": " ",
+            "owner": "henok2000@gmail.com",
+            "members": [
+                "user4"
+            ]
+        }
+    ],
+    "owner": "henok2000@gmail.com",
+    "announcement": [
+        {
+            "id": "",
+            "time": "",
+            "titile": "",
+            "description ": "vvvvvvvvv "
+        },
+        {
+            "id": "ww",
+            "time": " ",
+            "titile": " ",
+            "description": "vvvvvvvvv"
+        }
+    ]
+}

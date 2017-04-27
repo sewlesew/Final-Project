@@ -1,0 +1,88 @@
+ 
+   
+ <form  [formGroup]="mygroup" (ngSubmit)="onSubmit()" method="POST">
+
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" id="email" value={{profile.email}} class="form-control" formControlName="email" readonly >
+    </div>
+
+    
+<!--
+     <div class="form-group">
+       <select class="form-control" id="gender" formControlName="gender">
+              <option>M</option>
+              <option>F</option>  
+            </select>-->
+     
+      <!--<input type="text" id="gender" class="form-control"  placeholder="Gender" formControlName="gender">-->
+    <!--</div>-->
+
+     <!--<div class="form-group">    
+      <input type="text" id="city" class="form-control" placeholder="City" formControlName="city">
+    </div>
+
+    <div class="form-group">    
+      <input type="text" id="state" class="form-control" placeholder="State" formControlName="state">
+    </div>-->
+
+    
+
+<div class="form-group">    
+      <button type="submit" class="btn btn-primary" (click)="onSubmit()" >unsubscribe</button>
+    </div>
+
+</form>
+
+ <div class="form-group" *ngIf="isSubscribed">    
+     <p>You have subscribed successfully. </p>
+    </div>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!--<form>-->
+  <!--<fieldset disabled>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" id="email" value={{profile.email}} class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" value={{profile.name}} class="form-control">
+    </div>
+
+     <div class="form-group">
+      <label for="gender">Gender:</label>
+      <input type="text" id="gender" value={{profile.gender}} class="form-control">
+    </div>
+
+     </fieldset>-->
+
+     <!--<div class="form-group">    
+      <input type="text" id="city" class="form-control" placeholder="City">
+    </div>
+
+    <div class="form-group">    
+      <input type="text" id="state" class="form-control" placeholder="State">
+    </div>
+
+    
+
+<input class="form-control"  id="state" type="text" placeholder="State">
+  
+ 
+    <button type="submit" class="btn btn-primary" (submit)="onSubmit()">Submit</button>
+ 
+</form>-->
